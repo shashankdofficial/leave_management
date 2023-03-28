@@ -16,9 +16,9 @@ public class Leaves {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long LeaveId;
 	
-//	@ManyToOne(fetch = FetchType.EAGER)
-//	@JoinColumn(name = "empId")
-//	private Employee employee;
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "empId")
+	private Employee employee;
 	
 	@NotNull(message = "Date cannot be blank")
 	private String to;

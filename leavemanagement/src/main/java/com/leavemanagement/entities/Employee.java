@@ -48,7 +48,7 @@ public class Employee {
 	@Size(min = 5,max = 8,message = "password length should be between 5 & 8.")
     private String password;
 
-    @OneToMany(cascade = CascadeType.ALL,mappedBy = "employees",orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "Leaves",orphanRemoval = true)
 	@JsonIgnore
     List<Leaves> leavesDetails = new ArrayList<>();
     
