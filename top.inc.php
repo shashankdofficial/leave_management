@@ -1,3 +1,10 @@
+<?php
+require('db.inc.php');
+if(!isset($_SESSION['ROLE'])){
+	header('location:login.php');
+	die();
+}
+?>
 <!doctype html>
 <html class="no-js" lang="">
    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -22,6 +29,7 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                <ul class="nav navbar-nav">
                   <li class="menu-title">Menu</li>
+                  <?php if($_SESSION['ROLE']==1){ ?>
 				  <li class="menu-item-has-children dropdown">
                      <a href="index.php" > Department Master</a>
                   </li>
@@ -31,9 +39,11 @@
 				  <li class="menu-item-has-children dropdown">
                      <a href="employee.php" > Employee Master</a>
                   </li>
+				  <?php } else { ?>
 				  <li class="menu-item-has-children dropdown">
-                     <a href="#" > Profile</a>
+                     <a href="add_employee.php?id=<?php echo $_SESSION['USER_ID']?>" > Profile</a>
                   </li>
+				  <?php } ?>
 				   <li class="menu-item-has-children dropdown">
                      <a href="leave.php" > Leave</a>
                   </li>
