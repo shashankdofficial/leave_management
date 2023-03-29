@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content pb-0">
+        <div class="animated fadeIn">
+           <div class="row">
+              <div class="col-lg-12">
+                 <div class="card">
+                    <div class="card-header"><strong>Leave Type</strong><small> Form</small></div>
+                    <div class="card-body card-block">
+                       <form method="post">
+                           <div class="form-group">
+                            <label for="leave_type" class=" form-control-label">Leave Type</label>
+                            <input type="text" value="<?php echo $leave_type?>" name="leave_type" placeholder="Enter your leave type" class="form-control" required></div>
+                           
+                           <button  type="submit" class="btn btn-lg btn-info btn-block">
+                           <span id="payment-button-amount">Submit</span>
+                           </button>
+                          </form>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+</body>
+</html>
