@@ -1,6 +1,4 @@
-<td><?php echo $i?></td>
-									   <td><?php echo $row['id']?></td>
-									   <td><?php <?php
+<?php
 require('top.inc.php');
 
 if(isset($_GET['type']) && $_GET['type']=='delete' && isset($_GET['id'])){
@@ -20,14 +18,7 @@ if($_SESSION['ROLE']==1){
 }
 $res=mysqli_query($con,$sql);
 ?>
-etch_assoc($res)){?>
-							<tr>
-                               echo $row['name'].' ('.$row['eid'].')'?></td>
-                                       <td><?php echo $row['leave_from']?></td>
-									   <td><?php echo $row['leave_to']?></td>
-									   <td><?php echo $row['leave_description']?></td>
-									   <td>
-										   <?php<div class="content pb-0">
+<div class="content pb-0">
             <div class="orders">
                <div class="row">
                   <div class="col-xl-12">
@@ -56,7 +47,16 @@ etch_assoc($res)){?>
                                  <tbody>
                                     <?php 
 									$i=1;
-									while($row=mysqli_f
+									while($row=mysqli_fetch_assoc($res)){?>
+									<tr>
+                                       <td><?php echo $i?></td>
+									   <td><?php echo $row['id']?></td>
+									   <td><?php echo $row['name'].' ('.$row['eid'].')'?></td>
+                                       <td><?php echo $row['leave_from']?></td>
+									   <td><?php echo $row['leave_to']?></td>
+									   <td><?php echo $row['leave_description']?></td>
+									   <td>
+										   <?php
 											if($row['leave_status']==1){
 												echo "Applied";
 											}if($row['leave_status']==2){
