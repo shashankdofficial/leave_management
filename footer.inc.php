@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="clearfix"></div>
+<div class="clearfix"></div>
          <footer class="site-footer">
             <div class="footer-inner bg-white">
                <div class="row">
                   <div class="col-sm-6">
-                     Copyright &copy; 2018 Ela Admin
+                     Copyright &copy; JStreams Solution Pvt. Ltd.
                   </div>
                   <div class="col-sm-6 text-right">
-                     Designed by <a href="https://colorlib.com/">Colorlib</a>
+                     Designed by <a href="#">Team 2</a>
                   </div>
                </div>
             </div>
