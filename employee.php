@@ -1,7 +1,7 @@
 <?php
 require('top.inc.php');
 if($_SESSION['ROLE']!=1){
-	header('location:add_employee.php?id='.$_SESSION['USER_ID']);
+	header('location:leave.php?id='.$_SESSION['USER_ID']);
 	die();
 }
 if(isset($_GET['type']) && $_GET['type']=='delete' && isset($_GET['id'])){
