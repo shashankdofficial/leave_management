@@ -36,9 +36,9 @@ if(!isset($_SESSION['ROLE'])){
                   <li class="menu-item-has-children dropdown">
                      <a href="leave_type.php" > Leave Type Master</a>
                   </li>
-				  <li class="menu-item-has-children dropdown">
+				  <!-- <li class="menu-item-has-children dropdown">
                      <a href="employee.php" > Employee Master</a>
-                  </li>
+                  </li> -->
 				  <?php } else { ?>
 				  <!-- <li class="menu-item-has-children dropdown">
                      <a href="add_employee.php?id=<?php echo $_SESSION['USER_ID']?>" > Profile</a>
