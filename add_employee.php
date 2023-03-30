@@ -25,6 +25,11 @@ if(isset($_POST['submit'])){
 	$name=mysqli_real_escape_string($con,$_POST['name']);
 	$email=mysqli_real_escape_string($con,$_POST['email']);
 	$mobile=mysqli_real_escape_string($con,$_POST['mobile']);
+	$x = preg_match_all('/^[0-9]{10}+$/', $mobile);
+	if($x!=true){
+		echo "<script>alert('Invalid mobile number');
+		document.location='add_employee.php'</script>";
+	}
 	$password=mysqli_real_escape_string($con,$_POST['password']);
 	$department_id=mysqli_real_escape_string($con,$_POST['department_id']);
 	$address=mysqli_real_escape_string($con,$_POST['address']);
