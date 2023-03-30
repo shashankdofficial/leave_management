@@ -3,6 +3,9 @@ require('db.inc.php');
 $msg="";
 if(isset($_POST['email']) && isset($_POST['password'])){
 	$email=mysqli_real_escape_string($con,$_POST['email']);
+   if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $msg = "Invalid email format";
+   }
 	$password=mysqli_real_escape_string($con,$_POST['password']);
 	$res=mysqli_query($con,"select * from employee where email='$email' and password='$password'");
 	$count=mysqli_num_rows($res);

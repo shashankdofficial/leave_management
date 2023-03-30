@@ -25,9 +25,9 @@ $res=mysqli_query($con,$sql);
                      <div class="card">
                         <div class="card-body">
                            <h4 class="box-title">Leave </h4>
-						    <?php if($_SESSION['ROLE']==2){ ?>
-						   <h4 class="box_title_link"><a href="add_leave.php">Add Leave</a> </h4>
-						   <?php } ?>
+						    <!-- <?php if($_SESSION['ROLE']==2){ ?>
+						   <h4 class="box_title_link"><a href="add_leave.php">Apply Leave</a> </h4>
+						   <?php } ?> -->
                         </div>
                         <div class="card-body--">
                            <div class="table-stats order-table ov-h">
@@ -51,7 +51,8 @@ $res=mysqli_query($con,$sql);
 									<tr>
                                        <td><?php echo $i?></td>
 									   <td><?php echo $row['id']?></td>
-									   <td><?php echo $row['name'].' ('.$row['eid'].')'?></td>
+									   <td><?php echo $row['name']?></td>
+									   <!-- .' ('.$row['eid'].')' -->
                                        <td><?php echo $row['leave_from']?></td>
 									   <td><?php echo $row['leave_to']?></td>
 									   <td><?php echo $row['leave_description']?></td>
