@@ -27,8 +27,8 @@ $res=mysqli_query($con,"select * from employee where role=2 order by id desc");
                                        <th width="5%">S.No</th>
                                        <th width="5%">ID</th>
                                        <th width="40%">Name</th>
-									   <th width="15%">Email</th>
-									   <th width="15%">Mobile</th>
+                                       <th width="15%">Email</th>
+                                       <th width="15%">Mobile</th>
                                        <th width="20%"></th>
                                     </tr>
                                  </thead>

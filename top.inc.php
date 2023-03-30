@@ -40,8 +40,13 @@ if(!isset($_SESSION['ROLE'])){
                      <a href="employee.php" > Employee Master</a>
                   </li>
 				  <?php } else { ?>
-				  <li class="menu-item-has-children dropdown">
+				  <!-- <li class="menu-item-has-children dropdown">
                      <a href="add_employee.php?id=<?php echo $_SESSION['USER_ID']?>" > Profile</a>
+                  </li> -->
+                  <li>
+                  <?php if($_SESSION['ROLE']==2){ ?>
+						   <h4 class="box_title_link"><a href="add_leave.php">Apply Leave</a> </h4>
+						   <?php } ?>
                   </li>
 				  <?php } ?>
 				   <li class="menu-item-has-children dropdown">
@@ -56,14 +61,14 @@ if(!isset($_SESSION['ROLE'])){
             <div class="top-left">
                <div class="navbar-header">
                   <a class="navbar-brand" href="index.php"><img src="images/logo.png" alt="Logo"></a>
-                  <a class="navbar-brand hidden" href="index.php"><img src="images/logo2.png" alt="Logo"></a>
-                  <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
+                  <a class="navbar-brand hidden" href="index.php"><img src="" alt="Logo"></a>
+                  <!-- <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a> -->
                </div>
             </div>
             <div class="top-right">
                <div class="header-menu">
                   <div class="user-area dropdown float-right">
-                     <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Welcome <?php echo $_SESSION['USER_NAME']?></a>
+                     <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Welcome <?php echo $_SESSION['USER_NAME']?> Log-out</a>
                      <div class="user-menu dropdown-menu">
                         <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i>Logout</a>
                      </div>
