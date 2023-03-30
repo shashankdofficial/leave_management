@@ -5,10 +5,10 @@
             <div class="footer-inner bg-white">
                <div class="row">
                   <div class="col-sm-6">
-                     Copyright &copy; JStreams Solution Pvt. Ltd.
+                     Copyright &copy; <b>JStreams Solution Pvt. Ltd.</b>
                   </div>
                   <div class="col-sm-6 text-right">
-                     Designed by <a href="#">Team 2</a>
+                     Designed by <a href="#"><b>Team 2</b></a>
                   </div>
                </div>
             </div>
