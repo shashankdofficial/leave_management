@@ -41,7 +41,7 @@ $res=mysqli_query($con,$sql);
 									   <th width="14%">To</th>
 									   <th width="15%">Description</th>
 									   <th width="18%">Leave Status</th>
-									   <th width="10%"></th>
+									   <th width="10%">Action</th>
                                     </tr>
                                  </thead>
                                  <tbody>
