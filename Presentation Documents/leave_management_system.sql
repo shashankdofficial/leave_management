@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 31, 2023 at 09:33 AM
+-- Generation Time: Mar 31, 2023 at 11:17 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.13
 
@@ -64,12 +64,12 @@ CREATE TABLE `employee` (
 --
 
 INSERT INTO `employee` (`id`, `name`, `email`, `mobile`, `password`, `department_id`, `address`, `birthday`, `role`) VALUES
-(2, 'Shashank', 'shashank@gmail.com', '2147483647', '12345', 3, 'Lucknow', '2020-10-31', 2),
-(3, 'admin', 'admin@gmail.com', '0', 'admin', 4, '', '0000-00-00', 1),
-(4, 'Nikhil', 'nikhil@gmail.com', '1234567890', '123456', 3, 'Delhi', '2020-12-31', 2),
-(5, 'Falak', 'falak@gmail.com', '1234567890', '123', 3, 'Noida', '2020-12-31', 2),
-(6, 'Priti Sharma', 'priti@gmail.com', '1234567891', '12345', 4, 'Noida', '1998-05-28', 2),
-(8, 'Abhijeet', 'abhijeet@gmail.com', '1234567891', '12345', 3, 'Noida', '2023-03-29', 2);
+(2, 'Shashank', 'shashank@gmail.com', '2147483647', 'Shashank@123', 3, 'Lucknow', '2020-10-31', 2),
+(3, 'admin', 'admin@gmail.com', '0', 'Admin@321', 4, '', '0000-00-00', 1),
+(4, 'Nikhil', 'nikhil@gmail.com', '1234567890', 'Nikhil@123', 3, 'Delhi', '2020-12-31', 2),
+(5, 'Falak', 'falak@gmail.com', '1234567890', 'Falak@123', 3, 'Noida', '2020-12-31', 2),
+(6, 'Priti Sharma', 'priti@gmail.com', '1234567891', 'Priti@123', 4, 'Noida', '1998-05-28', 2),
+(8, 'Abhijeet', 'abhijeet@gmail.com', '1234567891', 'Abhijeet@123', 3, 'Noida', '2023-03-29', 2);
 
 -- --------------------------------------------------------
 
