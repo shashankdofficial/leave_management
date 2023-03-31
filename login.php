@@ -14,7 +14,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 		$_SESSION['ROLE']=$row['role'];
 		$_SESSION['USER_ID']=$row['id'];
 		$_SESSION['USER_NAME']=$row['name'];
-		header('location:index.php');
+		header('location:leave.php');
 		die();
 	}else{
 		$msg="Please enter correct login details";

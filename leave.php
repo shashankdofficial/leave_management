@@ -24,7 +24,7 @@ $res=mysqli_query($con,$sql);
                   <div class="col-xl-12">
                      <div class="card">
                         <div class="card-body">
-                           <h4 class="box-title">Leave </h4>
+                           <h4 class="box-title">Applied Leaves</h4>
 						    <!-- <?php if($_SESSION['ROLE']==2){ ?>
 						   <h4 class="box_title_link"><a href="add_leave.php">Apply Leave</a> </h4>
 						   <?php } ?> -->
@@ -41,7 +41,7 @@ $res=mysqli_query($con,$sql);
 									   <th width="14%">To</th>
 									   <th width="15%">Description</th>
 									   <th width="18%">Leave Status</th>
-									   <th width="10%"></th>
+									   <th width="10%">Action</th>
                                     </tr>
                                  </thead>
                                  <tbody>
