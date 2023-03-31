@@ -57,7 +57,3 @@ if(isset($_POST['submit'])){
                </div>
             </div>
          </div>
-                  
-<?php
-require('footer.inc.php');
-?>

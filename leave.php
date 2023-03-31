@@ -109,6 +109,3 @@ $res=mysqli_query($con,$sql);
 			window.location.href='leave.php?id='+id+'&type=update&status='+select_value;
 		 }
 		 </script>
-<?php
-require('footer.inc.php');
-?>
