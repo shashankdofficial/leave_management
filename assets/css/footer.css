@@ -1,0 +1,36 @@
+.footer {
+    /* display: flex;
+    flex-direction: row; */
+    position: fixed;
+    margin-left: 30px;
+    /* margin-right: 5%; */
+    bottom: 0;
+    width: 70%;
+    padding: 5px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    color: black;
+    text-align: center;
+    }
+    
+    
+    /* .footer-inner{
+        margin-left: 30%;
+        padding: 5px;
+    } */
+    
+    /* .row{
+        display: flex;
+        flex-direction: row;
+     /* margin-left: 15px; 
+    }
+    */
+    
+    footer.site-footer .footer-inner a {
+        color: whitesmoke;
+    }
+    .col-sm-6{
+        /* -ms-flex:0 0 30%;flex:0 0 70%;max-width:50% */
+        margin: auto;
+    }
