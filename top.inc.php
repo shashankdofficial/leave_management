@@ -30,9 +30,10 @@ if(!isset($_SESSION['ROLE'])){
                <ul class="nav navbar-nav">
                   <li class="menu-title">Welcome <?php echo $_SESSION['USER_NAME']?></li>
                   <?php if($_SESSION['ROLE']==1){ ?>
-				      <!-- <li class="menu-item-has-children dropdown">
+				      <li class="menu-item-has-children dropdown">
                      <a href="index.php" > Department Master</a>
                   </li>
+                  <!--
                   <li class="menu-item-has-children dropdown">
                      <a href="leave_type.php" > Leave Type Master</a>
                   </li> -->
