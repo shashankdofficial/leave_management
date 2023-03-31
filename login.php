@@ -52,7 +52,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
                      </div>
                      <div class="form-group">
                         <label>Password</label>
-                        <input type="password" name="password" class="form-control" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                        <input type="password" name="password" class="form-control" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more" required>
                      </div>
                      <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Sign in</button>
 					 <div class="result_msg"><?php echo $msg?></div>
