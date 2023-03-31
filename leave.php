@@ -53,8 +53,16 @@ $res=mysqli_query($con,$sql);
 									   <td><?php echo $row['id']?></td>
 									   <td><?php echo $row['name']?></td>
 									   <!-- .' ('.$row['eid'].')' -->
-                                       <td><?php echo $row['leave_from']?></td>
-									   <td><?php echo $row['leave_to']?></td>
+									   <?php  
+											$orgDate = $row['leave_from'];  
+											$newDate = date("m-d-Y", strtotime($orgDate));   
+										?> 
+                                       <td><?php echo $newDate?></td>
+									   <?php  
+											$orgDate2 = $row['leave_to'];  
+											$newDate2 = date("m-d-Y", strtotime($orgDate2));   
+										?> 
+									   <td><?php echo $newDate2?></td>
 									   <td><?php echo $row['leave_description']?></td>
 									   <td>
 										   <?php
