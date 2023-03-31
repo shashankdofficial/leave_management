@@ -1,4 +1,4 @@
-# leave_management
+# Leave Management System
 
 This Project aims to develop an essential online leave management system for the organization. This system automates the workflow of leave applications and their approvals.
 The Leave Management System application will reduce paperwork and maintain records more efficiently.
