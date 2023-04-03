@@ -105,6 +105,6 @@ if(isset($_POST['submit'])){
             </div>
          </div>
                   
-<?php
+<!-- <?php
 require('footer.inc.php');
-?>
+?> -->

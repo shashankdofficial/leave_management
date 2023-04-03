@@ -47,6 +47,6 @@ if(isset($_POST['leave_type'])){
             </div>
          </div>
                   
-<?php
+<!-- <?php
 require('footer.inc.php');
-?>
+?> -->

@@ -53,6 +53,6 @@ $res=mysqli_query($con,"select * from leave_type order by id desc");
             </div>
 		  </div>
          
-<?php
+<!-- <?php
 require('footer.inc.php');
-?>
+?> -->

@@ -57,6 +57,6 @@ $res=mysqli_query($con,"select * from employee where role=2 order by id desc");
             </div>
 		  </div>
          
-<?php
+<!-- <?php
 require('footer.inc.php');
-?>
+?> -->

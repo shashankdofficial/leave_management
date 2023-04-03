@@ -47,6 +47,6 @@ if(isset($_POST['department'])){
             </div>
          </div>
                   
-<?php
+<!-- <?php
 require('footer.inc.php');
-?>
+?> -->
