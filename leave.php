@@ -35,13 +35,13 @@ $res=mysqli_query($con,$sql);
                                  <thead>
                                     <tr>
                                        <th width="5%">S.No</th>
-                                       <th width="5%">ID</th>
+                                       <th width="13%">Employee ID</th>
 									   <th width="15%">Employee Name</th>
-                                       <th width="14%">From</th>
-									   <th width="14%">To</th>
+                                       <th width="12%">From</th>
+									   <th width="12%">To</th>
 									   <th width="15%">Description</th>
-									   <th width="18%">Leave Status</th>
-									   <th width="10%">Action</th>
+									   <th width="16%">Leave Status</th>
+									   <th width="8%">Action</th>
                                     </tr>
                                  </thead>
                                  <tbody>
@@ -50,7 +50,7 @@ $res=mysqli_query($con,$sql);
 									while($row=mysqli_fetch_assoc($res)){?>
 									<tr>
                                        <td><?php echo $i?></td>
-									   <td><?php echo $row['id']?></td>
+									   <td><?php echo $row['employee_id']?></td>
 									   <td><?php echo $row['name']?></td>
 									   <!-- .' ('.$row['eid'].')' -->
 									   <?php  
